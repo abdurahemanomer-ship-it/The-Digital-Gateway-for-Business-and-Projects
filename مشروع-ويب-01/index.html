@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f4">
+  <meta name="description" content="عيادات الابتسامة في الرياض، رعاية متكاملة لابتسامتك بأيدي فريق طبي متخصص.">
+  <title>عيادات الابتسامة | رعاية تليق بابتسامتك</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #183b3a;
+      --muted: #687d79;
+      --green: #28766a;
+      --green-dark: #1d5b52;
+      --mint: #e4f0e9;
+      --paper: #f7f8f4;
+      --line: #e2e9e3;
+      --coral: #df866e;
+      font-family: "IBM Plex Sans Arabic", Tahoma, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; background: var(--paper); color: var(--ink); }
+    a { color: inherit; text-decoration: none; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .wrap { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
+
+    .topbar {
+      height: 82px; display: flex; align-items: center; justify-content: space-between;
+      border-bottom: 1px solid var(--line);
+    }
+    .brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 700; font-size: 19px; }
+    .brand-mark {
+      width: 40px; height: 40px; display: grid; place-items: center; border-radius: 13px;
+      color: #fff; background: var(--green); font-size: 21px; line-height: 1;
+    }
+    .brand small { display: block; color: var(--muted); font-size: 11px; font-weight: 500; margin-top: -2px; }
+    nav { display: flex; align-items: center; gap: 31px; color: #506864; font-size: 14px; }
+    nav a:hover, .text-link:hover { color: var(--green); }
+    .nav-cta, .button {
+      display: inline-flex; min-height: 46px; align-items: center; justify-content: center; gap: 9px;
+      padding: 0 20px; border-radius: 5px; background: var(--green); color: #fff; font-weight: 600;
+      transition: background .2s ease, transform .2s ease;
+    }
+    .nav-cta { min-height: 42px; padding-inline: 17px; font-size: 13px; }
+    .nav-cta:hover, .button:hover { background: var(--green-dark); transform: translateY(-1px); }
+
+    .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; padding-block: 64px 76px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 9px; color: var(--green); font-size: 13px; font-weight: 600; }
+    .eyebrow::before { content: ""; width: 22px; height: 1px; background: var(--coral); }
+    h1 { max-width: 570px; margin: 20px 0 15px; font-size: clamp(38px, 4.6vw, 61px); line-height: 1.3; letter-spacing: 0; }
+    h1 span { color: var(--green); }
+    .hero-copy { max-width: 490px; color: var(--muted); font-size: 17px; line-height: 1.95; margin: 0 0 27px; }
+    .hero-actions { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+    .text-link { font-size: 14px; font-weight: 600; transition: color .2s ease; }
+    .hero-note { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 12px; margin-top: 29px; }
+    .note-dot { width: 8px; height: 8px; border-radius: 50%; background: #77aa82; box-shadow: 0 0 0 4px #e6efe4; }
+    .hero-visual { position: relative; min-width: 0; padding: 0 0 20px 20px; }
+    .hero-visual::before { content: ""; position: absolute; inset: 26px 25px 0 0; border: 1px solid #c8d9cf; border-radius: 4px; }
+    .hero-photo { position: relative; width: 100%; height: 430px; display: block; object-fit: cover; object-position: center; border-radius: 3px; }
+    .photo-caption {
+      position: absolute; bottom: 0; right: -12px; display: flex; align-items: center; gap: 12px;
+      min-width: 218px; padding: 15px 18px; background: white; box-shadow: 0 12px 34px #183b3a17;
+    }
+    .caption-icon { width: 38px; height: 38px; display: grid; place-items: center; color: var(--green); background: var(--mint); border-radius: 50%; font-size: 18px; }
+    .photo-caption strong { display: block; font-size: 14px; }
+    .photo-caption small { color: var(--muted); font-size: 11px; }
+
+    .trust-strip { border-block: 1px solid var(--line); background: #f0f4ed; }
+    .trust-inner { min-height: 86px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .trust-item { display: flex; align-items: center; gap: 11px; color: #405b56; font-size: 13px; font-weight: 500; }
+    .trust-item b { color: var(--green); font-size: 18px; font-weight: 500; }
+
+    section.content-section { padding-block: 92px; }
+    .section-heading { max-width: 610px; margin-bottom: 36px; }
+    .section-heading h2 { margin: 12px 0 8px; font-size: 34px; line-height: 1.4; }
+    .section-heading p { margin: 0; color: var(--muted); line-height: 1.9; }
+    .about-grid { display: grid; grid-template-columns: .8fr 1.2fr; align-items: center; gap: 80px; }
+    .about-quote { border-right: 2px solid var(--coral); padding: 9px 24px 9px 0; color: var(--green-dark); font-size: 22px; line-height: 1.8; font-weight: 600; }
+    .about-copy { max-width: 630px; color: var(--muted); line-height: 2; font-size: 15px; }
+
+    .services-section { background: #edf3ed; }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid #d8e3da; }
+    .service { padding: 28px 24px 15px 27px; border-left: 1px solid #d8e3da; }
+    .service:last-child { border-left: 0; }
+    .service-number { color: #91aaa0; font-size: 12px; letter-spacing: 0; }
+    .service-icon { width: 49px; height: 49px; display: grid; place-items: center; margin-top: 26px; background: #dcebe1; color: var(--green); border-radius: 50%; font-size: 21px; }
+    .service h3 { margin: 17px 0 8px; font-size: 19px; }
+    .service p { max-width: 300px; margin: 0; color: var(--muted); font-size: 14px; line-height: 1.9; }
+
+    .contact-section { padding-block: 82px 72px !important; }
+    .contact-panel { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 30px; padding: 38px 42px; background: var(--ink); color: white; border-radius: 4px; }
+    .contact-panel .eyebrow { color: #abd0bd; }
+    .contact-panel h2 { margin: 10px 0 5px; font-size: 30px; }
+    .contact-panel p { margin: 0; color: #c4d3cc; font-size: 14px; }
+    .contact-panel .button { background: #e2f0e7; color: var(--green-dark); white-space: nowrap; }
+    .contact-panel .button:hover { background: white; }
+    .contact-details { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 30px 5px 0; }
+    .detail-label { display: block; margin-bottom: 7px; color: #83958f; font-size: 12px; }
+    .detail-value { color: #39534e; font-size: 14px; }
+    footer { margin-top: 50px; border-top: 1px solid var(--line); padding-block: 20px; color: #82918c; font-size: 12px; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 15px; }
+    .whatsapp-float { position: fixed; z-index: 5; left: 24px; bottom: 22px; width: 54px; height: 54px; display: grid; place-items: center; border-radius: 50%; background: #208c61; color: white; box-shadow: 0 6px 20px #183b3a32; font-size: 23px; transition: transform .2s ease; }
+    .whatsapp-float:hover { transform: translateY(-3px); }
+
+    @media (max-width: 800px) {
+      .wrap { width: min(100% - 36px, 620px); }
+      .topbar { height: 72px; }
+      nav { gap: 15px; }
+      nav > a:not(.nav-cta) { display: none; }
+      .hero { grid-template-columns: 1fr; gap: 34px; padding-block: 48px 59px; }
+      .hero-copy { font-size: 16px; }
+      .hero-photo { height: 350px; }
+      .trust-inner { justify-content: flex-start; overflow-x: auto; padding-block: 19px; }
+      .trust-item { flex: 0 0 auto; }
+      section.content-section { padding-block: 68px; }
+      .about-grid { grid-template-columns: 1fr; gap: 25px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .service { border-left: 0; border-bottom: 1px solid #d8e3da; padding: 23px 0; }
+      .service:last-child { border-bottom: 0; }
+      .service-icon { margin-top: 15px; }
+      .contact-panel { grid-template-columns: 1fr; padding: 30px 24px; }
+      .contact-details { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .wrap { width: calc(100% - 32px); }
+      .brand { font-size: 17px; }
+      .nav-cta { min-height: 39px; padding-inline: 12px; font-size: 12px; }
+      h1 { font-size: 40px; }
+      .hero-photo { height: 290px; }
+      .photo-caption { right: -5px; min-width: 195px; padding: 12px; }
+      .section-heading h2 { font-size: 29px; }
+      .about-quote { font-size: 20px; }
+      .contact-panel h2 { font-size: 26px; }
+      .contact-details { grid-template-columns: 1fr; gap: 18px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; }
+      .whatsapp-float { left: 16px; bottom: 16px; width: 50px; height: 50px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap topbar">
+    <a class="brand" href="#home" aria-label="عيادات الابتسامة، الصفحة الرئيسية">
+      <span class="brand-mark" aria-hidden="true">✳</span>
+      <span>عيادات الابتسامة<small>رعاية تبدأ بابتسامة</small></span>
+    </a>
+    <nav aria-label="التنقل الرئيسي">
+      <a href="#about">عن العيادة</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#contact">تواصل معنا</a>
+      <a class="nav-cta" href="https://wa.me/966501234567" target="_blank" rel="noopener noreferrer">احجز موعدك <span aria-hidden="true">←</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero" id="home">
+      <div>
+        <span class="eyebrow">ابتسامتك تستحق الأفضل</span>
+        <h1>رعاية لطيفة،<br><span>وابتسامة تدوم.</span></h1>
+        <p class="hero-copy">في عيادات الابتسامة، نعتني بصحة أسنانك بتجربة مريحة وخطط علاجية تناسبك، في قلب الرياض.</p>
+        <div class="hero-actions">
+          <a class="button" href="https://wa.me/966501234567" target="_blank" rel="noopener noreferrer">احجز عبر واتساب <span aria-hidden="true">←</span></a>
+          <a class="text-link" href="#services">اكتشف خدماتنا <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-note"><span class="note-dot" aria-hidden="true"></span> نهتم براحتك في كل زيارة</div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-photo" src="https://images.unsplash.com/photo-1606811971618-4486d14f3f99?auto=format&fit=crop&w=1100&q=85" alt="طبيبة أسنان تعتني بمراجعة في العيادة" fetchpriority="high">
+        <div class="photo-caption"><span class="caption-icon" aria-hidden="true">✳</span><span><strong>عناية من القلب</strong><small>لأن راحتك أولويتنا</small></span></div>
+      </div>
+    </section>
+
+    <div class="trust-strip" aria-label="مميزات العيادة">
+      <div class="wrap trust-inner">
+        <div class="trust-item"><b aria-hidden="true">✳</b> فريق طبي متخصص</div>
+        <div class="trust-item"><b aria-hidden="true">⌖</b> موقعنا في الرياض</div>
+        <div class="trust-item"><b aria-hidden="true">♡</b> تجربة مريحة وإنسانية</div>
+        <div class="trust-item"><b aria-hidden="true">✓</b> خطط علاج تناسبك</div>
+      </div>
+    </div>
+
+    <section class="wrap content-section" id="about">
+      <div class="about-grid">
+        <div class="about-quote">نؤمن أن زيارة طبيب الأسنان يمكن أن تكون بداية ابتسامة أجمل.</div>
+        <div>
+          <div class="section-heading">
+            <span class="eyebrow">نبذة عنّا</span>
+            <h2>اهتمام حقيقي، من أول موعد</h2>
+          </div>
+          <p class="about-copy">عيادات الابتسامة وجهتك للعناية بصحة الفم والأسنان في الرياض. يجمع فريقنا بين الخبرة والاهتمام بالتفاصيل ليقدم لك رعاية واضحة ومريحة، من الفحص الأول وحتى اكتمال ابتسامتك.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-section" id="services">
+      <div class="wrap content-section">
+        <div class="section-heading">
+          <span class="eyebrow">خدماتنا</span>
+          <h2>رعاية متكاملة لابتسامتك</h2>
+          <p>خدمات أساسية مصممة لتناسب احتياجاتك في كل مرحلة.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service">
+            <span class="service-number">01 / وقاية</span>
+            <span class="service-icon" aria-hidden="true">✳</span>
+            <h3>الفحص والتنظيف</h3>
+            <p>فحوصات دورية وتنظيف احترافي للمحافظة على صحة أسنانك ولثتك.</p>
+          </article>
+          <article class="service">
+            <span class="service-number">02 / ترميم</span>
+            <span class="service-icon" aria-hidden="true">◇</span>
+            <h3>علاج الأسنان</h3>
+            <p>علاجات دقيقة للتسوس ومشكلات الأسنان، مع الحرص على راحتك.</p>
+          </article>
+          <article class="service">
+            <span class="service-number">03 / تجميل</span>
+            <span class="service-icon" aria-hidden="true">☼</span>
+            <h3>تجميل الابتسامة</h3>
+            <p>خيارات تجميلية تمنح ابتسامتك مظهرًا مشرقًا وطبيعيًا.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap content-section contact-section" id="contact">
+      <div class="contact-panel">
+        <div>
+          <span class="eyebrow">نحن هنا لأجلك</span>
+          <h2>موعدك القادم يبدأ برسالة</h2>
+          <p>تواصل معنا واحجز موعدك بكل سهولة.</p>
+        </div>
+        <a class="button" href="https://wa.me/966501234567" target="_blank" rel="noopener noreferrer">تواصل عبر واتساب <span aria-hidden="true">←</span></a>
+      </div>
+      <div class="contact-details">
+        <div><span class="detail-label">الهاتف وواتساب</span><a class="detail-value" href="tel:+966501234567" dir="ltr">050 123 4567</a></div>
+        <div><span class="detail-label">العنوان</span><span class="detail-value">الرياض، المملكة العربية السعودية</span></div>
+        <div><span class="detail-label">مواعيد العمل</span><span class="detail-value">السبت – الخميس، 9 ص – 9 م</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner"><span>© 2026 عيادات الابتسامة</span><span>رعايتك تبدأ بابتسامة</span></div>
+  </footer>
+  <a class="whatsapp-float" href="https://wa.me/966501234567" target="_blank" rel="noopener noreferrer" aria-label="تواصل معنا عبر واتساب">☎</a>
+</body>
+</html>

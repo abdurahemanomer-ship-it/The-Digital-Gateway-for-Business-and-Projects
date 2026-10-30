@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title description">
+  <title id="title">معاينة مشروع السيرة الذاتية الرقمية</title>
+  <desc id="description">تصميم أخضر هادئ يعرض اسم عبدالرحمن عمر حاجي وتخصصه في تطوير المواقع.</desc>
+  <rect width="1200" height="800" fill="#f4f6f1"/>
+  <rect x="32" y="32" width="1136" height="736" fill="#e6eee6"/>
+  <path d="M32 32h1136v736H32z" fill="none" stroke="#cad9ce" stroke-width="2"/>
+  <g opacity=".36" stroke="#c9d9cf" stroke-width="2">
+    <path d="M120 32v736M220 32v736M320 32v736M420 32v736M520 32v736M620 32v736M720 32v736M820 32v736M920 32v736M1020 32v736M1120 32v736"/>
+    <path d="M32 132h1136M32 232h1136M32 332h1136M32 432h1136M32 532h1136M32 632h1136M32 732h1136"/>
+  </g>
+  <rect x="101" y="104" width="998" height="592" fill="#f4f6f1" stroke="#cad9ce" stroke-width="2"/>
+  <rect x="101" y="104" width="998" height="72" fill="#f8faf6"/>
+  <circle cx="148" cy="140" r="20" fill="#28766a"/>
+  <text x="148" y="148" fill="#fff" font-family="Tahoma, sans-serif" font-size="23" text-anchor="middle">ع</text>
+  <text x="1016" y="145" fill="#183b3a" font-family="Tahoma, sans-serif" font-size="24" font-weight="700" text-anchor="end">عبدالرحمن حاجي</text>
+  <text x="188" y="277" fill="#28766a" font-family="Tahoma, sans-serif" font-size="19" text-anchor="start">مطور ويب من الرياض</text>
+  <text x="188" y="366" fill="#183b3a" font-family="Tahoma, sans-serif" font-size="49" font-weight="700" text-anchor="start">عبدالرحمن عمر حاجي</text>
+  <text x="188" y="421" fill="#28766a" font-family="Tahoma, sans-serif" font-size="26" text-anchor="start">مطور مواقع ويب</text>
+  <text x="188" y="472" fill="#687d79" font-family="Tahoma, sans-serif" font-size="20" text-anchor="start">تصميم متجاوب وتجارب رقمية واضحة</text>
+  <rect x="188" y="518" width="194" height="54" rx="3" fill="#28766a"/>
+  <text x="285" y="553" fill="#fff" font-family="Tahoma, sans-serif" font-size="19" font-weight="700" text-anchor="middle">استكشف أعمالي</text>
+  <circle cx="865" cy="444" r="170" fill="none" stroke="#a9c4b2" stroke-width="2"/>
+  <circle cx="865" cy="444" r="132" fill="#eff4ed" stroke="#b4cbbb" stroke-width="2"/>
+  <text x="865" y="484" fill="#1d5b52" font-family="Tahoma, sans-serif" font-size="180" text-anchor="middle">ع</text>
+  <circle cx="986" cy="526" r="11" fill="#df866e"/>
+</svg>
